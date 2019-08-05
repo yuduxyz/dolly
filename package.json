@@ -1,5 +1,6 @@
 {
 	"name": "dolly",
+	"publisher": "xieyuzhong",
 	"displayName": "Dolly - Generate Folder of Files from Template",
 	"description": "Generate folder of files from template in Visual Studio Code",
 	"version": "0.0.1",
