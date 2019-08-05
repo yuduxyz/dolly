@@ -1,0 +1,70 @@
+{
+	"name": "dolly",
+	"displayName": "Dolly - Generate Folder of Files from Template",
+	"description": "Generate folder of files from template in Visual Studio Code",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.dolly"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.dolly",
+				"title": "生成文件"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "extension.dolly",
+					"title": "生成文件",
+					"group": "navigation"
+				}
+			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "Dolly Configuration",
+			"properties": {
+				"dolly.templatePath": {
+					"type": [
+						"array"
+					],
+					"default": [
+						"./document/nullComponent"
+					],
+					"description": "Where the template is stored relative to the workspace root path. Defaults to a folder named './document/nullComponent' in the root of your project."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.2"
+	},
+	"dependencies": {
+		"@types/fs-extra": "^8.0.0",
+		"fs-extra": "^8.1.0"
+	}
+}
