@@ -27,12 +27,11 @@ export function activate(context: vscode.ExtensionContext) {
 		
 		try {
 			await createFiles(directoryPath)
+			vscode.window.showInformationMessage('创建成功')
 		} catch (e) {
+			vscode.window.showErrorMessage(e.message)
 			console.error(e)
 		}
-
-		// Display a message box to the user
-		vscode.window.showErrorMessage((new Date()).toString());
 	});
 
 	context.subscriptions.push(disposable);
