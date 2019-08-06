@@ -8,13 +8,13 @@
 
 ### 方法一：通过 `/.vscode/settings.json`
 
-![settings.json](./assets/settings.png)
+![settings.json](https://raw.githubusercontent.com/yuduxyz/dolly/master/assets/settings.png)
 
 ### 方法二：通过 vscode 首选项/设置
 
 打开首选项/设置，在“扩展”中找到 “Dolly Configuration”，修改对应配置
 
-![vscode](./assets/vscode.png)
+![vscode](https://raw.githubusercontent.com/yuduxyz/dolly/master/assets/vscode.png)
 
 
 **Enjoy!**
