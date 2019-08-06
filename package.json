@@ -18,14 +18,14 @@
 		"commands": [
 			{
 				"command": "extension.dolly",
-				"title": "生成文件"
+				"title": "Dolly Go!"
 			}
 		],
 		"menus": {
 			"explorer/context": [
 				{
 					"command": "extension.dolly",
-					"title": "生成文件",
+					"title": "Dolly Go!",
 					"group": "navigation"
 				}
 			]
@@ -35,13 +35,14 @@
 			"title": "Dolly Configuration",
 			"properties": {
 				"dolly.templatePath": {
-					"type": [
-						"array"
-					],
-					"default": [
-						"./document/nullComponent"
-					],
+					"type": "string",
+					"default": "./document/nullComponent",
 					"description": "Where the template is stored relative to the workspace root path. Defaults to a folder named './document/nullComponent' in the root of your project."
+				},
+				"dolly.newFolderName": {
+					"type": "string",
+					"default": "children",
+					"description": "Name of the generated folder."
 				}
 			}
 		}
