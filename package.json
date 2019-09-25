@@ -36,8 +36,8 @@
 			"properties": {
 				"dolly.templatePath": {
 					"type": "string",
-					"default": "./document/nullComponent",
-					"description": "Where the template is stored relative to the workspace root path. Defaults to a folder named './document/nullComponent' in the root of your project."
+					"default": "./node_modules/vscode-docs/react/componentTemplate/Robot",
+					"description": "Where the template is stored relative to the workspace root path. Defaults to a folder named './node_modules/vscode-docs/react/componentTemplate/Robot' in the root of your project."
 				},
 				"dolly.newFolderName": {
 					"type": "string",
@@ -67,6 +67,7 @@
 	},
 	"dependencies": {
 		"@types/fs-extra": "^8.0.0",
-		"fs-extra": "^8.1.0"
+		"fs-extra": "^8.1.0",
+		"vscode-docs": "git+https://github.com/momopig/vscode-docs.git"
 	}
 }
