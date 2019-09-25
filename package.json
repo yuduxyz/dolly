@@ -67,7 +67,6 @@
 	},
 	"dependencies": {
 		"@types/fs-extra": "^8.0.0",
-		"fs-extra": "^8.1.0",
-		"vscode-docs": "git+https://github.com/momopig/vscode-docs.git"
+		"fs-extra": "^8.1.0"
 	}
 }
