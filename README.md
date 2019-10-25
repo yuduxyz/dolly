@@ -1,6 +1,10 @@
 # Dolly
 
-资源管理器中右键点击 “Dolly Go!”，会自动将模版 `./node_modules/vscode-docs/react/componentTemplate/Robot` 复制到当前路径，命名为 `children`。
+Dolly 是一个根据模版自动生成文件结构的工具。
+
+1. `npm install dolly-docs`
+
+2. 资源管理器中右键点击 “Dolly Go!”，会自动将模版 `./node_modules/dolly-docs/react/componentTemplate/Robot` 复制到当前路径，命名为 `Robot`。
 
 ## 配置
 
